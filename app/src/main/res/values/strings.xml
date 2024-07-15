@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Budget Planner</string>
+    <string-array name="category_array">
+        <item>Food</item>
+        <item>Rent</item>
+        <item>Entertainment</item>
+        <item>Utilities</item>
+        <item>Miscellaneous</item>
+    </string-array>
+</resources>
