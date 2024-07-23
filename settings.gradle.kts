@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Budget Planner"
 include(":app")
- 
+include(":calculator")

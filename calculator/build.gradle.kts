@@ -1,17 +1,15 @@
-import org.jetbrains.kotlin.types.checker.TypeRefinementSupport.Disabled.isEnabled
-
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
-    namespace = "com.example.budgetplanner"
+    namespace = "com.example.calculator"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.budgetplanner"
-        minSdk = 21
+        applicationId = "com.example.calculator"
+        minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -20,11 +18,8 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+    }
 
-    }
-    buildFeatures {
-        viewBinding = true
-    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -56,7 +51,6 @@ android {
 
 dependencies {
 
-    implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -65,7 +59,6 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.appcompat)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -73,5 +66,4 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-
 }
